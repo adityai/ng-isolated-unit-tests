@@ -4,12 +4,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { Add } from './add.pipe/add.pipe.component';
 import { AddPipe } from './add.pipe';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Add.PipeComponent,
-    AddPipe
+    AddPipe,
+    MessagesComponent
   ],
   imports: [
     BrowserModule

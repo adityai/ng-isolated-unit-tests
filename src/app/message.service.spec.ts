@@ -18,4 +18,12 @@ describe('MessageService', () => {
     service.add("Testing");
     expect(service.messages).toHaveSize(1);
   });
+
+  it('should get all messages when getAll is called', () => {
+    service.add("First test");
+    service.add("Second test");
+    let messages = service.getAll();
+    console.log(messages);
+    expect(messages).toEqual(["First test", "Second test"]);
+  });
 });
