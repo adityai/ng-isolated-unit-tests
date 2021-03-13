@@ -2,16 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { Add } from './add.pipe/add.pipe.component';
-import { AddPipe } from './add.pipe';
 import { MessagesComponent } from './messages/messages.component';
+import { ParticlesComponent } from './particles/particles.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Add.PipeComponent,
-    AddPipe,
-    MessagesComponent
+    MessagesComponent,
+    ParticlesComponent
   ],
   imports: [
     BrowserModule
