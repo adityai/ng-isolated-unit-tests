@@ -14,6 +14,10 @@ export class ParticlesComponent implements OnInit {
     this.getParticles();
   }
 
+  addParticle(newParticle: String): void {
+    
+  }
+
   getParticles(): void {
     this.particleService.particles;
   }

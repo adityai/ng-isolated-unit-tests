@@ -11,4 +11,8 @@ export class ParticleService {
   getParticles() {
     return this.particles;
   }
+
+  addParticle(particle: string) {
+    this.particles.push(particle);
+  }
 }

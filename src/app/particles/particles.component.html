@@ -2,5 +2,7 @@
 
     <h2>Particles</h2>
     <div *ngFor='let particle of particleService.particles'> {{particle}} </div>
-
+    <br><br>
+    <div>Add new particle: </div><input type="text" #newParticle>
+    <button (click)="particleService.addParticle('newParticle')">Add</button>
 </div>
